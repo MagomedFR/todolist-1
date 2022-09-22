@@ -1,0 +1,278 @@
+.wrapper{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.inputBlock{
+    text-align: center;
+
+}
+.input_item{
+    animation: changeBg 5s infinite alternate linear;
+    color: #ffeba7;
+}
+.input_item .placeholder {
+    color: white;
+}
+.taskText{
+    color: #ffeba7;
+}
+
+#inp{
+    font-size: 20px;
+    padding: 5px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f2029;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.taskDeleted{
+    transition: 1.5s;
+}
+
+.taskText{
+    padding: 0 10px;
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: rgb(216, 216, 216);
+    font-size: 20px;
+    border: 0;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.done{
+    opacity: .8;
+    background-color: rgb(197, 197, 197);
+}
+
+.doneCheckbox{
+    pointer-events: none;
+}
+
+    /*===================================*/
+
+    body {
+        animation: changeBg 5s infinite alternate linear;
+        font-family: "Roboto", sans-serif;
+        font-size: 13px;
+      }
+      
+      .variousamechanics {
+        position: absolute;
+        top: 50%;
+        left: 85%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+      }
+      
+     .variousamechanics {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        cursor: pointer;
+        border: 0;
+        background: transparent;
+        outline: 0;
+        overflow: hidden;
+      }
+      button .cleverlypaired {
+        position: relative;
+        background: #1e272f;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        color: #f8f9f8;
+        font-size: 18px;
+        -webkit-transition: .3s color;
+        transition: .3s color;
+        border-radius: 2px;
+      }
+      button .cleverlypaired .fa {
+        width: 30px;
+        -webkit-transition: .2s all;
+        transition: .2s all;
+      }
+      button .cleverlypaired .fa-check {
+        color: #2ca06a;
+      }
+      button .cleverlypaired .fa-question {
+        color: #2085e8;
+      }
+      button .cleverlypaired:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        background: #2c343c;
+        top: 12.5px;
+        right: 1px;
+        -webkit-transition: .2s right;
+        transition: .2s right;
+        z-index: 1;
+      }
+      
+      button .kedeverything {
+          position: relative;
+          width: 0;
+          height: 29.8px;
+          overflow: hidden;
+          font-family: "Roboto", sans-serif;
+          background: #da2d29;
+          text-align: center;
+          line-height: 29.9px;
+          color: #f5f3f3;
+          font-weight: 300;
+          -webkit-transition: .3s all;
+          transition: .3s all;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+      }
+      
+      
+      button .kedeverything span {
+        width: 100%;
+        opacity: 0;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        -webkit-transition: .3s all;
+        transition: .3s all;
+      }
+      button:hover .cleverlypaired {
+        color: #F34541;
+        border-radius: 0;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+      button:hover .cleverlypaired:after {
+        right: -2px;
+      }
+      button:hover .kedeverything {
+        width: 119px;
+      }
+      button:hover .kedeverything span {
+        opacity: 1;
+        top: 0;
+      }
+      button.samilpaken .cleverlypaired {
+        border-radius: 0;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+      button.samilpaken .cleverlypaired .fa {
+        -webkit-transform: translateY(-30px);
+                transform: translateY(-30px);
+      }
+      button.samilpaken .cleverlypaired:after {
+        right: -2px;
+      }
+      button.samilpaken .kedeverything {
+        background: #2492FF;
+        width: 119px;
+      }
+      button.samilpaken .kedeverything span {
+        opacity: 1;
+        top: 0;
+      }
+      button.done .cleverlypaired {
+        border-radius: 0;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+      button.done .cleverlypaired .fa {
+        -webkit-transform: translateY(-60px);
+                transform: translateY(-60px);
+      }
+      button.done .cleverlypaired:after {
+        right: -2px;
+      }
+      button.done .kedeverything {
+        background: #38B87C;
+        width: 119px;
+      }
+      button.done .kedeverything span {
+        opacity: 1;
+        top: 0;
+      }
+      
+      @-webkit-keyframes fadeInZoom {
+        0% {
+          opacity: 0;
+          -webkit-transform: scale(0.7);
+                  transform: scale(0.7);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+      
+      @keyframes fadeInZoom {
+        0% {
+          opacity: 0;
+          -webkit-transform: scale(0.7);
+                  transform: scale(0.7);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+      @keyframes changeBg{
+
+        0% {
+    
+            background: #333030;
+    
+        }
+    
+        25% {
+    
+            background: #26355b;
+    
+        }
+    
+        50% {
+    
+            background: #2b113c;
+    
+        }
+    
+        75% {
+    
+            background: #503e12;
+    
+        }
+    
+        100% {
+    
+            background: #5f2519;
+    
+        }
+    
+    }
